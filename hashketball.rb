@@ -131,3 +131,12 @@ end
 def team_names
   [game_hash[:home][:team_name], game_hash[:away][:team_name]]
 end
+
+def player_numbers(teamName)
+  numbers = []
+  (game_hash[:home][:team_name] == teamName ? game_hash[:home] : game_hash[:away])[:players].each {|player, stats|
+    numbers.push(stats[:number])
+  }
+    
+  }
+end
