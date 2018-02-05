@@ -127,3 +127,7 @@ end
 def team_colors(teamName)
   game_hash[:home].include?(teamName) ? game_hash[:home][:colors] : game_hash[:away][:colors]
 end
+
+def team_names
+  [game_hash[:home][:team_name], game_hash[:away][:team_name]]
+end
