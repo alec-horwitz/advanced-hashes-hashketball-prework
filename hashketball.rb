@@ -143,3 +143,16 @@ end
 def player_stats(playerName)
   game_hash[:home][:players].include?(playerName) ? game_hash[:home][:players][playerName] : game_hash[:away][:players][playerName]
 end
+
+def big_shoe_rebounds
+  biggestDick = 0
+  sexCount = 0
+  game_hash.each {|team,atributes|
+    atributes[:players].each {|player, stats|
+      if stats[:shoe] > biggestDick
+        sexCount = stats[:rebounds]
+      end
+    }
+  }
+  sexCount
+end
