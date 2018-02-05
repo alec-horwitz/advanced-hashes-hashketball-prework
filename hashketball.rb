@@ -139,3 +139,7 @@ def player_numbers(teamName)
   }
   numbers
 end
+
+def player_stats
+  
+end
