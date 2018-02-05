@@ -140,6 +140,6 @@ def player_numbers(teamName)
   numbers
 end
 
-def player_stats
-
+def player_stats(playerName)
+  game_hash[:home][:players].include?(playerName) ? game_hash[:home][:players][playerName] : game_hash[:away][:players][playerName]
 end
