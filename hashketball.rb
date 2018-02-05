@@ -137,6 +137,5 @@ def player_numbers(teamName)
   (game_hash[:home][:team_name] == teamName ? game_hash[:home] : game_hash[:away])[:players].each {|player, stats|
     numbers.push(stats[:number])
   }
-    
-  }
+  numbers
 end
