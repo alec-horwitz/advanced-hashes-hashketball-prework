@@ -119,3 +119,7 @@ end
 def num_points_scored(playerName)
   game_hash[:home][:players].include?(playerName) ? game_hash[:home][:players][playerName][:points] : game_hash[:away][:players][playerName][:points]
 end
+
+def shoe_size(playerName)
+  game_hash[:home][:players].include?(playerName) ? game_hash[:home][:players][playerName][:shoe] : game_hash[:away][:players][playerName][:shoe]
+end
