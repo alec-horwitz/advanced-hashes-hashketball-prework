@@ -58,10 +58,10 @@ def game_hash
       }
     },
     away: {
-      team_name: "",
-      colors: [],
+      team_name: "Charlotte Hornets",
+      colors: [Turquoise, Purple],
       players: {
-        "Alan Anderson" => {
+        "Jeff Adrien" => {
           number:,
           shoe:,
           points:,
@@ -71,7 +71,37 @@ def game_hash
           blocks:,
           slam_dunks:
         },
-        "Alan Anderson" => {
+        "Bismak Biyombo" => {
+          number:,
+          shoe:,
+          points:,
+          rebounds:,
+          assists:,
+          steals:,
+          blocks:,
+          slam_dunks:
+        },
+        "DeSagna Diop" => {
+          number:,
+          shoe:,
+          points:,
+          rebounds:,
+          assists:,
+          steals:,
+          blocks:,
+          slam_dunks:
+        },
+        "Ben Gordon" => {
+          number:,
+          shoe:,
+          points:,
+          rebounds:,
+          assists:,
+          steals:,
+          blocks:,
+          slam_dunks:
+        },
+        "Brendan Haywood" => {
           number:,
           shoe:,
           points:,
