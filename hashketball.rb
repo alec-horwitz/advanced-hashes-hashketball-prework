@@ -117,9 +117,13 @@ def game_hash
 end
 
 def num_points_scored(playerName)
-  game_hash.each { |team, attribute|
-    if attribute[players:].include?(playerName)
-      attribute[players:][playerName][points:]
-    end
+  points = 0
+  game_hash.each {|team,attributes|
+    attributes[players:].each {|player,stats|
+      if player == playerName
+        points = stats[points:]
+      end
+    }
   }
+  points
 end
