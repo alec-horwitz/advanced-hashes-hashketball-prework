@@ -145,14 +145,14 @@ def player_stats(playerName)
 end
 
 def big_shoe_rebounds
-  biggestDick = 0
-  timesLaid = 0
+  shoeSize = 0
+  rebounds = 0
   game_hash.each {|team,atributes|
     atributes[:players].each {|player, stats|
-      if stats[:shoe] > biggestDick
-        sexCount = stats[:rebounds]
+      if stats[:shoe] > shoeSize
+        rebounds = stats[:rebounds]
       end
     }
   }
-  timesLaid
+  rebounds
 end
